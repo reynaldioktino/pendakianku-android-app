@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_pembeli"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".AppCerita.PutDelCeritaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/photoid"/>
+
+        <Button
+            android:id="@+id/btPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPhotoId"
+            android:layout_centerHorizontal="true"
+            android:text="Select Photo Id"/>
+
+        <TextView
+            android:id="@+id/tvIdCerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btPhotoId"
+            android:layout_marginTop="10dp"
+            android:text="ID Cerita :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtIdCerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdCerita"
+            android:layout_toRightOf="@+id/tvIdCerita"
+            android:hint="id_cerita"
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/tvNamaGunung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdCerita"
+            android:text="Gunung:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtNamaGunung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvNamaGunung"
+            android:layout_alignLeft="@+id/edtIdCerita"
+            android:layout_toRightOf="@+id/tvNamaGunung"
+            android:hint="Nama Gunung"/>
+
+        <TextView
+            android:id="@+id/tvCerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaGunung"
+            android:text="Cerita :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtCerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvCerita"
+            android:layout_alignLeft="@+id/edtIdCerita"
+            android:layout_toRightOf="@+id/tvCerita"
+            android:hint="Alamat"/>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCerita"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btUpdateDataCerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"/>
+
+            <Button
+                android:id="@+id/btDeleteDataCerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"/>
+
+            <Button
+                android:id="@+id/btBackDataCerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pesan"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:textSize="20dp"
+            android:inputType="textMultiLine"/>
+    </RelativeLayout>
+</ScrollView>
